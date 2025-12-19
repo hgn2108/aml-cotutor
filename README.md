@@ -36,14 +36,15 @@ To transform LLMs from black-box code generators into transparent algorithm tuto
 ## 📂 Project Structure
 
 ├── app/
-│ ├── solver_service.py 
-│ ├── app.py
-│ └── requirements.txt
+│   ├── solver_service.py    
+│   ├── app.py                
+│   ├── requirements.txt     
+│   └── utils/                
 ├── finetune/
-│ ├── cot_finetune.ipynb # SFT notebook
-│ ├── finetune_data_engineering.ipynb 
-├── visual_explainer.ipynb # Research notebook for diagrams & narration
+│   └── *.ipynb # Data curation and supervised fine-tuning notebooks
+├── visual_explainer.ipynb    # Research notebook for flowchart + narration logic
 └── README.md
+
 
 ---
 
