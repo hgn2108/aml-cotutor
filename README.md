@@ -47,6 +47,7 @@ To transform LLMs from black-box code generators into transparent algorithm tuto
 ├── visual_explainer.ipynb
 └── README.md
 
+```
 ---
 
 ## 🛠️ Setup & Installation
