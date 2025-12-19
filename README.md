@@ -63,11 +63,12 @@ You will need API keys for:
 2. Environment Variables
 
 Set the required keys as environment variables in an .env file. You'll need a Huggingface token, a Gemini API Key/ Youtube API Key, and the Huggingface Space ID for the Space hosting our finetuned model.
+```
 HF_TOKEN= [Your HF Token]
 GEMINI_API_KEY= [Your Gemini key]
 HF_SPACE_ID="gsr2149/Leetcode-CoT-model" 
 YOUTUBE_API_KEY=[Your Youtube API key]
-
+```
 
 3. Installation
 cd app
