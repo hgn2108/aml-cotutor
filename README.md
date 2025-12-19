@@ -89,4 +89,4 @@ cd app
 streamlit run app.py
 ```
 The application launches at:
-👉 http://localhost:8501
+http://localhost:8501
