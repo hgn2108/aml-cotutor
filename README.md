@@ -6,7 +6,11 @@ By combining a fine-tuned **Llama-3.1-8B chain-of-thought reasoning model** with
 - Correct code solutions  
 - Structured step-by-step reasoning  
 - Dynamic visual flowcharts  
-- Pedagogical narrations for LeetCode-style problems  
+- Pedagogical narrations
+
+## Project Goal
+
+To transform LLMs from black-box code generators into transparent algorithm tutors by making chain-of-thought reasoning explicit, structured, and visual.
 
 ---
 
@@ -53,45 +57,32 @@ You will need API keys for:
 
 ---
 
-### 2. Environment Variables
+2. Environment Variables
 
-**Mac / Linux**
-```bash
-export GEMINI_API_KEY="your_key_here"
-export HF_TOKEN="your_token_here"
+Set the required keys as environment variables in an .env file. You'll need a Huggingface token, a Gemini API Key/ Youtube API Key, and the Huggingface Space ID for the Space hosting our finetuned model.
+HF_TOKEN= [Your HF Token]
+GEMINI_API_KEY= [Your Gemini key]
+HF_SPACE_ID="gsr2149/Leetcode-CoT-model" 
+YOUTUBE_API_KEY=[Your Youtube API key]
 
-
-Windows (Command Prompt)
-
-set GEMINI_API_KEY=your_key_here
-set HF_TOKEN=your_token_here
 
 3. Installation
 cd app
-
-# Create virtual environment
-python -m venv venv
-source venv/bin/activate     # Windows: venv\Scripts\activate
-
-# Install dependencies
-pip install -r requirements.txt
-
-Running the Application
 Step 1: Start the Backend (FastAPI)
 
 Handles model inference, validation, fallback logic, and YouTube search.
-
+```
 python solver_service.py
-
-
+```
 Backend available at: http://localhost:8000
 
 Step 2: Start the Frontend (Streamlit)
 
 In a new terminal:
 
+```
 cd app
 streamlit run app.py
-
-
-App launches at: http://localhost:8501
+```
+The application launches at:
+👉 http://localhost:8501
