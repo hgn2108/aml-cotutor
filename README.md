@@ -35,6 +35,7 @@ To transform LLMs from black-box code generators into transparent algorithm tuto
 
 ## 📂 Project Structure
 
+```text
 ├── app/
 │   ├── solver_service.py
 │   ├── app.py
@@ -45,7 +46,6 @@ To transform LLMs from black-box code generators into transparent algorithm tuto
 │   └── finetune_data_engineering.ipynb
 ├── visual_explainer.ipynb
 └── README.md
-
 
 ---
 
