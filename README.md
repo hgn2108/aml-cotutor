@@ -86,7 +86,7 @@ In a new terminal:
 
 ```
 cd app
-streamlit run app.py
+streamlit run app.py 
 ```
 The application launches at:
 http://localhost:8501
